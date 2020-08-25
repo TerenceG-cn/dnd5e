@@ -7,12 +7,19 @@ package entity.charater;
 public abstract class Character {
     private String en_name;
     private String cn_name;
-    /**属性值*/
-    private int strength;//力量
-    private int dexterity;//敏捷
-    private int intelligence;//智力
-    private int wisdom;//感知
-    private int charisma;//魅力
+    /**属性值,一般情况下取值为范围0~20*/
+    private Integer strength;       //力量
+    private Integer dexterity;      //敏捷
+    private Integer intelligence;   //智力
+    private Integer wisdom;         //感知
+    private Integer charisma;       //魅力
+    /**属性调整值*/
+    private Integer str_mod;        //力量调整值
+    private Integer dex_mod;        //敏捷调整值
+    private Integer int_mod;        //智力调整值
+    private Integer wis_mod;        //感知调整值
+    private Integer cha_mod;        //魅力调整值
+
     /**调整值*/
     private int[]  abilityModifiers;
     /**阵营*/
@@ -46,6 +53,7 @@ public abstract class Character {
 
     public void setStrength(int strength) {
         this.strength = strength;
+        this.str_mod=(strength-10)/2;
     }
 
     public int getDexterity() {
@@ -54,6 +62,7 @@ public abstract class Character {
 
     public void setDexterity(int dexterity) {
         this.dexterity = dexterity;
+        this.dex_mod=(dexterity-10)/2;
     }
 
     public int getIntelligence() {
@@ -62,6 +71,7 @@ public abstract class Character {
 
     public void setIntelligence(int intelligence) {
         this.intelligence = intelligence;
+        this.int_mod=(intelligence-10)/2;
     }
 
     public int getWisdom() {
@@ -70,6 +80,7 @@ public abstract class Character {
 
     public void setWisdom(int wisdom) {
         this.wisdom = wisdom;
+        this.wis_mod=(wisdom-10)/2;
     }
 
     public int getCharisma() {
@@ -78,6 +89,7 @@ public abstract class Character {
 
     public void setCharisma(int charisma) {
         this.charisma = charisma;
+        this.cha_mod=(charisma-10)/2;
     }
 
     public int[] getAbilityModifiers() {
@@ -94,5 +106,25 @@ public abstract class Character {
 
     public void setAlignment(String alignment) {
         this.alignment= alignment;
+    }
+
+    public Integer getStr_mod() {
+        return str_mod;
+    }
+
+    public Integer getDex_mod() {
+        return dex_mod;
+    }
+
+    public Integer getInt_mod() {
+        return int_mod;
+    }
+
+    public Integer getWis_mod() {
+        return wis_mod;
+    }
+
+    public Integer getCha_mod() {
+        return cha_mod;
     }
 }
