@@ -70,7 +70,6 @@ public class Monster extends Character{
     private Boolean specialVulnerable;  //特殊易伤，例如怪物罗刹，易伤由善良生物持用魔法武器的穿刺
 
     //TODO
-    private final String cmt_test="uesless fileds";
 
     /**挑战等级*/
     private Double challengeRating;
