@@ -1,3 +1,4 @@
+import com.tce.pojo.treasures.ArtObjects;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -14,10 +15,10 @@ public class ArtObjectsTest {
             SqlSession sqlSession=factory.openSession();  //获取核心对象
 
             /**getByName true -> selectOne*/
-            /*已完成
+            //已完成
             ArtObjects artbyname=sqlSession.selectOne("getArtByName","statuette");
             System.out.println(artbyname.toString());
-             */
+
 
             /**getByValue true -> selectAll*/
             /*

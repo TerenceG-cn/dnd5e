@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="dao.GemstonesDao">
-    <select id="getByValue" parameterType="java.lang.Integer" resultType="entity.treasures.Gemstones">
+<mapper namespace="com.tce.dao.GemstonesDao">
+    <select id="getByValue" parameterType="java.lang.Integer" resultType="com.tce.pojo.treasures.Gemstones">
         SELECT * FROM gemstones WHERE value=#{val};
     </select>
-    <select id="getByName"  parameterType="java.lang.String" resultType="entity.treasures.Gemstones">
+    <select id="getByName"  parameterType="java.lang.String" resultType="com.tce.pojo.treasures.Gemstones">
         SELECT * FROM gemstones WHERE en_name=#{name} or cn_name=#{name};
     </select>
-    <insert id="insertGem"  parameterType="entity.treasures.Gemstones" >
+    <insert id="insertGem"  parameterType="com.tce.pojo.treasures.Gemstones" >
         INSERT INTO gemstones VALUES (#{id},#{en_name},#{cn_name},#{gem_description},#{value})
     </insert>
-    <update id="updateGem" parameterType="entity.treasures.Gemstones" >
+    <update id="updateGem" parameterType="com.tce.pojo.treasures.Gemstones" >
         UPDATE gemstones
         <set>
             <if test="en_name !=null">en_name=#{en_name}</if>

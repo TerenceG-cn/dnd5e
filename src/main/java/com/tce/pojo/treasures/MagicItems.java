@@ -1,4 +1,4 @@
-package entity.treasures;
+package com.tce.pojo.treasures;
 
 public class MagicItems {
     private Integer id;//×ÔÔöÖ÷¼ü

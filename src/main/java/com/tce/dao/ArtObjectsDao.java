@@ -1,6 +1,6 @@
-package dao;
+package com.tce.dao;
 
-import entity.treasures.ArtObjects;
+import com.tce.pojo.treasures.ArtObjects;
 
 import java.util.List;
 

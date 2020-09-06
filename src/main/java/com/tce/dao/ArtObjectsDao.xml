@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="dao.ArtObjectsDao">
-    <select id="getArtByValue" parameterType="java.lang.Integer" resultType="entity.treasures.ArtObjects">
+<mapper namespace="com.tce.dao.ArtObjectsDao">
+    <select id="getArtByValue" parameterType="java.lang.Integer" resultType="com.tce.pojo.treasures.ArtObjects">
         SELECT * FROM artobjects WHERE value=#{val};
     </select>
-    <select id="getArtByName"  parameterType="java.lang.String" resultType="entity.treasures.ArtObjects">
+    <select id="getArtByName"  parameterType="java.lang.String" resultType="com.tce.pojo.treasures.ArtObjects">
         SELECT * FROM artobjects WHERE en_name=#{name} or cn_name=#{name};
     </select>
-    <insert id="insertArt"  parameterType="entity.treasures.ArtObjects" >
+    <insert id="insertArt"  parameterType="com.tce.pojo.treasures.ArtObjects" >
         INSERT INTO artobjects VALUES (#{id},#{en_name},#{cn_name},#{value})
     </insert>
-    <update id="updateArt" parameterType="entity.treasures.ArtObjects" >
+    <update id="updateArt" parameterType="com.tce.pojo.treasures.ArtObjects" >
         UPDATE artobjects
         <set>
             <if test="en_name !=null">en_name=#{en_name}</if>

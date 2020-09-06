@@ -1,4 +1,4 @@
-package entity.treasures;
+package com.tce.pojo.treasures;
 
 /**
  * ±¦Κ―ΚµΜε

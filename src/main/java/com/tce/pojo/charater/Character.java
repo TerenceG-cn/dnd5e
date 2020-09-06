@@ -1,28 +1,36 @@
-package entity.charater;
+package com.tce.pojo.charater;
 
 /**
- * ½ÇÉ«³éÏóÀà
- * ±»¹ÖÎï£¬Íæ¼Ò½ÇÉ«£¬NPC ¼Ì³Ğ
+ * è§’è‰²æŠ½è±¡ç±»
+ * è¢«æ€ªç‰©ï¼Œç©å®¶è§’è‰²ï¼ŒNPC ç»§æ‰¿
  */
 public abstract class Character {
     private String en_name;
     private String cn_name;
-    /**ÊôĞÔÖµ,Ò»°ãÇé¿öÏÂÈ¡ÖµÎª·¶Î§0~20*/
-    private Integer strength;       //Á¦Á¿
-    private Integer dexterity;      //Ãô½İ
-    private Integer intelligence;   //ÖÇÁ¦
-    private Integer wisdom;         //¸ĞÖª
-    private Integer charisma;       //÷ÈÁ¦
-    /**ÊôĞÔµ÷ÕûÖµ*/
-    private Integer str_mod;        //Á¦Á¿µ÷ÕûÖµ
-    private Integer dex_mod;        //Ãô½İµ÷ÕûÖµ
-    private Integer int_mod;        //ÖÇÁ¦µ÷ÕûÖµ
-    private Integer wis_mod;        //¸ĞÖªµ÷ÕûÖµ
-    private Integer cha_mod;        //÷ÈÁ¦µ÷ÕûÖµ
+    /**å±æ€§å€¼,ä¸€èˆ¬æƒ…å†µä¸‹å–å€¼ä¸ºèŒƒå›´0~20*/
+    private Integer strength;       //åŠ›é‡
+    private Integer dexterity;      //æ•æ·
+    private Integer intelligence;   //æ™ºåŠ›
+    private Integer wisdom;         //æ„ŸçŸ¥
+    private Integer charisma;       //é­…åŠ›
+    /**å±æ€§è°ƒæ•´å€¼*/
+    private Integer str_mod;        //åŠ›é‡è°ƒæ•´å€¼
+    private Integer dex_mod;        //æ•æ·è°ƒæ•´å€¼
+    private Integer int_mod;        //æ™ºåŠ›è°ƒæ•´å€¼
+    private Integer wis_mod;        //æ„ŸçŸ¥è°ƒæ•´å€¼
+    private Integer cha_mod;        //é­…åŠ›è°ƒæ•´å€¼
 
-    /**µ÷ÕûÖµ*/
+    /**è°ƒæ•´å€¼*/
     private int[]  abilityModifiers;
-    /**ÕóÓª*/
+    /**é˜µè¥
+     * 1.å®ˆåºå–„è‰¯ 4.å®ˆåºä¸­ç«‹ 7.å®ˆåºé‚ªæ¶
+     *
+     * 2.ä¸­ç«‹å–„è‰¯ 5.ç»å¯¹ä¸­ç«‹ 8.ä¸­ç«‹é‚ªæ¶
+     *
+     * 3.æ··ä¹±å–„è‰¯ 6.æ··ä¹±ä¸­ç«‹ 9.æ··ä¹±é‚ªæ¶
+     *
+     * 10.æ— é˜µè¥
+     */
     private String alignment;
 
     public Character(String en_name,String cn_name,int str,int dex,int intel,int wis,int chma,String ali){

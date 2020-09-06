@@ -1,6 +1,6 @@
-package dao;
+package com.tce.dao;
 
-import entity.treasures.Gemstones;
+import com.tce.pojo.treasures.Gemstones;
 
 import java.util.List;
 

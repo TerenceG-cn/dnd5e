@@ -1,4 +1,4 @@
-package entity.treasures;
+package com.tce.pojo.treasures;
 
 /**
  * 艺术品实体
