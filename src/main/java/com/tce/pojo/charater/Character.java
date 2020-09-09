@@ -4,7 +4,7 @@ package com.tce.pojo.charater;
  * 角色抽象类
  * 被怪物，玩家角色，NPC 继承
  */
-public abstract class Character {
+public class Character {
     private String en_name;
     private String cn_name;
     /**属性值,一般情况下取值为范围0~20*/
