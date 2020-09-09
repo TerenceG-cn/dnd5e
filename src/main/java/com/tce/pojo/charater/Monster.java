@@ -1,76 +1,84 @@
 package com.tce.pojo.charater;
 
 public class Monster extends com.tce.pojo.charater.Character {
-    /**ÖÖÀàÓë¸½±ê*/
+    /**ç§ç±»ä¸é™„æ ‡*/
     private String typeAndTags;
-    /**ÌåĞÍ*/
+    /**ä½“å‹*/
     private String size;
-//    /**ÉúÃü÷»*/
+//    /**ç”Ÿå‘½éª°*/
 //    private Integer hitDice;
-    /**»¤¼×µÈ¼¶*/
+    /**æŠ¤ç”²ç­‰çº§*/
     private Integer ac;
-    /**ÉúÃüÖµ*/
+    /**ç”Ÿå‘½å€¼*/
     private Integer hitPoints;
-    /**ËÙ¶È(²½ĞĞ)*/
-    private Integer speed;//µ¥Î»³ß
-    /**¾òÑ¨ËÙ¶È*/
+    /**é€Ÿåº¦(æ­¥è¡Œ)*/
+    private Integer speed;//å•ä½å°º
+    /**æ˜ç©´é€Ÿåº¦*/
     private Integer burrowSpeed;
-    /**ÅÊÅÀËÙ¶È*/
+    /**æ”€çˆ¬é€Ÿåº¦*/
     private Integer climbSpeed;
-    /**·ÉĞĞËÙ¶È*/
+    /**é£è¡Œé€Ÿåº¦*/
     private Integer flySpeed;
-    /**ÓÎÓ¾ËÙ¶È*/
+    /**æ¸¸æ³³é€Ÿåº¦*/
     private int swimSpeed;
-    /**»íÃâ¼ì¶¨saving throw
-     * ¡¤»íÃâ¼ì¶¨¼ÓÖµÊÇ¹ÖÎïÏà¹ØÊôĞÔµ÷ÕûÖµÓëÆäÊìÁ·¼ÓÖµµÄ×ÜºÍ£¬
-     * ÆäÖĞ¹ÖÎïµÄÊìÁ·¼ÓÖµ¾ö¶¨ÓÚ¹ÖÎïµÄÌôÕ½µÈ¼¶*/
-    /**»íÃâ¼ì¶¨¼ÓÖµSavingThrowBonus*/
+    /**è±å…æ£€å®šsaving throw
+     * Â·è±å…æ£€å®šåŠ å€¼æ˜¯æ€ªç‰©ç›¸å…³å±æ€§è°ƒæ•´å€¼ä¸å…¶ç†Ÿç»ƒåŠ å€¼çš„æ€»å’Œï¼Œ
+     * å…¶ä¸­æ€ªç‰©çš„ç†Ÿç»ƒåŠ å€¼å†³å®šäºæ€ªç‰©çš„æŒ‘æˆ˜ç­‰çº§*/
+    /**è±å…æ£€å®šåŠ å€¼SavingThrowBonus*/
 
 
-    /**¼¼ÄÜ
-     * ¡¤¼¼ÄÜÌõÄ¿ÃèÊö¸Ã¹ÖÎïËù¾«Í¨µÄÒ»Ïî»ò¶àÏî¼¼ÄÜ¡£ÀıÈç£¬Ä³¹Ö
-     * ÎïÉÆÓÚ¶´²ìÓëÒşÄäÊ±£¬¾ßÓĞ¶îÍâµÄ¸ĞÖª£¨¶´²ì£©ºÍÃô½İ£¨ÒşÄä£©
-     * ¼ì¶¨¼ÓÖµ¡£
-     * ¡¤¼¼ÄÜ¼ì¶¨¼ÓÖµÊÇ¹ÖÎïÏà¹ØÊôĞÔµ÷ÕûÖµÓëÆäÊìÁ·¼ÓÖµµÄ×ÜºÍ£¬
-     * ÆäÖĞ¹ÖÎïµÄÊìÁ·¼ÓÖµ¾ö¶¨ÓÚ¹ÖÎïµÄÌôÕ½µÈ¼¶£¨¾ßÌåÊıÖµÁĞÓÚ±í¸ñ
-     * ¡°ÌôÕ½µÈ¼¶¶ÔÓ¦ÊìÁ·¼ÓÖµ¡±ÖĞ£©¡£¸Ã¼ÓÖµ»¹¿ÉÒÔ¼ÓÈëÆäËûµÄµ÷Õû
-     * Öµ£¬´ËÊ±£¬¹ÖÎï¾ßÓĞµÄ¸ü¸ß¼ÓÖµ£¨Í¨³£Ê¹ÓÃË«±¶µÄÊìÁ·¼ÓÖµ£©±í
-     * Ê¾Æä¾ßÓĞ¸ü¸ßµÄ×¨Òµ¼¼Êõ¡£*/
-    private Integer athletics;      //ÔË¶¯¼¼ÄÜ¼ì¶¨¼ÓÖµ£¬Á¦Á¿Ïà¹Ø
+    /**æŠ€èƒ½
+     * Â·æŠ€èƒ½æ¡ç›®æè¿°è¯¥æ€ªç‰©æ‰€ç²¾é€šçš„ä¸€é¡¹æˆ–å¤šé¡¹æŠ€èƒ½ã€‚ä¾‹å¦‚ï¼ŒæŸæ€ª
+     * ç‰©å–„äºæ´å¯Ÿä¸éšåŒ¿æ—¶ï¼Œå…·æœ‰é¢å¤–çš„æ„ŸçŸ¥ï¼ˆæ´å¯Ÿï¼‰å’Œæ•æ·ï¼ˆéšåŒ¿ï¼‰
+     * æ£€å®šåŠ å€¼ã€‚
+     * Â·æŠ€èƒ½æ£€å®šåŠ å€¼æ˜¯æ€ªç‰©ç›¸å…³å±æ€§è°ƒæ•´å€¼ä¸å…¶ç†Ÿç»ƒåŠ å€¼çš„æ€»å’Œï¼Œ
+     * å…¶ä¸­æ€ªç‰©çš„ç†Ÿç»ƒåŠ å€¼å†³å®šäºæ€ªç‰©çš„æŒ‘æˆ˜ç­‰çº§ï¼ˆå…·ä½“æ•°å€¼åˆ—äºè¡¨æ ¼
+     * â€œæŒ‘æˆ˜ç­‰çº§å¯¹åº”ç†Ÿç»ƒåŠ å€¼â€ä¸­ï¼‰ã€‚è¯¥åŠ å€¼è¿˜å¯ä»¥åŠ å…¥å…¶ä»–çš„è°ƒæ•´
+     * å€¼ï¼Œæ­¤æ—¶ï¼Œæ€ªç‰©å…·æœ‰çš„æ›´é«˜åŠ å€¼ï¼ˆé€šå¸¸ä½¿ç”¨åŒå€çš„ç†Ÿç»ƒåŠ å€¼ï¼‰è¡¨
+     * ç¤ºå…¶å…·æœ‰æ›´é«˜çš„ä¸“ä¸šæŠ€æœ¯ã€‚*/
+    private Integer athletics;      //è¿åŠ¨æŠ€èƒ½æ£€å®šåŠ å€¼ï¼ŒåŠ›é‡ç›¸å…³
 
-    private Integer acrobatics;     //Ìå²Ù£¬ÌåÖÊ
-    private Integer sleightOfHand;  //ÇÉÊÖ
-    private Integer stealth;        //ÒşÄä
+    private Integer acrobatics;     //ä½“æ“ï¼Œä½“è´¨
+    private Integer sleightOfHand;  //å·§æ‰‹
+    private Integer stealth;        //éšåŒ¿
 
-    private Integer arcana;         //°ÂÃØ£¬ÖÇÁ¦
-    private Integer history;        //ÀúÊ·
-    private Integer religion;       //×Ú½Ì
-    private Integer nature;         //×ÔÈ»
-    private Integer investigation;  //µ÷²é
+    private Integer arcana;         //å¥¥ç§˜ï¼Œæ™ºåŠ›
+    private Integer history;        //å†å²
+    private Integer religion;       //å®—æ•™
+    private Integer nature;         //è‡ªç„¶
+    private Integer investigation;  //è°ƒæŸ¥
 
-    private Integer insight;        //¶´Ï¤£¬¸ĞÖª
-    private Integer perception;     //²ì¾õ
-    private Integer animalHanding;  //Ñ±ÊŞ
-    private Integer medicine;       //Ò½Ò©
-    private Integer survival;       //ÇóÉú
+    private Integer insight;        //æ´æ‚‰ï¼Œæ„ŸçŸ¥
+    private Integer perception;     //å¯Ÿè§‰
+    private Integer animalHanding;  //é©¯å…½
+    private Integer medicine;       //åŒ»è¯
+    private Integer survival;       //æ±‚ç”Ÿ
 
-    private Integer deception;      //ÆÚÂ÷£¬÷ÈÁ¦
-    private Integer persuation;     //ÓÎËµ
-    private Integer intimidation;   //ÍşĞ²
-    private Integer performance;    //±íÑİ
+    private Integer deception;      //æœŸç’ï¼Œé­…åŠ›
+    private Integer persuation;     //æ¸¸è¯´
+    private Integer intimidation;   //å¨èƒ
+    private Integer performance;    //è¡¨æ¼”
 
-    /**Ò×ÉËvulnerabilities*/
-    private Boolean fireVulnerable;     //»ğÑæÒ×ÉË
-    private Boolean frozenVulnerable;   //Àä¶³Ò×ÉË
-    private Boolean shiningVulnerable;  //¹âÒ«Ò×ÉË
-    private Boolean thunderVulnerable;  //À×ÃùÒ×ÉË
-    private Boolean soulVulnerable;     //ĞÄÁéÒ×ÉË£¬ÕæÊµÉËº¦
-    private Boolean bludgeonVulnerable; //¶Û»÷Ò×ÉË
-    private Boolean specialVulnerable;  //ÌØÊâÒ×ÉË£¬ÀıÈç¹ÖÎïÂŞÉ²£¬Ò×ÉËÓÉÉÆÁ¼ÉúÎï³ÖÓÃÄ§·¨ÎäÆ÷µÄ´©´Ì
-    /**Ò×ÉË*/
-    private String vulnerabilities;//TODO
+    /**æ˜“ä¼¤vulnerabilities*/
+    private Boolean fireVulnerable;     //ç«ç„°æ˜“ä¼¤
+    private Boolean frozenVulnerable;   //å†·å†»æ˜“ä¼¤
+    private Boolean shiningVulnerable;  //å…‰è€€æ˜“ä¼¤
+    private Boolean thunderVulnerable;  //é›·é¸£æ˜“ä¼¤
+    private Boolean soulVulnerable;     //å¿ƒçµæ˜“ä¼¤ï¼ŒçœŸå®ä¼¤å®³
+    private Boolean bludgeonVulnerable; //é’å‡»æ˜“ä¼¤
+    private Boolean specialVulnerable;  //ç‰¹æ®Šæ˜“ä¼¤ï¼Œä¾‹å¦‚æ€ªç‰©ç½—åˆ¹ï¼Œæ˜“ä¼¤ç”±å–„è‰¯ç”Ÿç‰©æŒç”¨é­”æ³•æ­¦å™¨çš„ç©¿åˆº
 
-    /**ÌôÕ½µÈ¼¶*/
+    /**æŠ—æ€§resistanceï¼Ÿä¸æ˜æ•ˆæœ*/
+    private Boolean fireResistance;     //ç«ç„°æŠ—æ€§
+    private Boolean frozenResistance;   //å†·å†»æŠ—æ€§
+    private Boolean shiningResistance;  //å…‰è€€æŠ—æ€§
+    private Boolean thunderResistance;  //é›·é¸£æŠ—æ€§
+    private Boolean soulResistance;     //å¿ƒçµæŠ—æ€§
+    private Boolean bludResistance;     //éé­”æ³•é’å‡»æŠ—æ€§
+    private Boolean punctureResistance; //ç©¿åˆºæŠ—æ€§
+    private Boolean slashResistance;    //æŒ¥ç æŠ—æ€§
+
+    /**æŒ‘æˆ˜ç­‰çº§*/
     private Double challengeRating;
     //TODO
     public Monster(String en_name, String cn_name, int str, int dex, int intel, int wis, int chma, String ali) {
@@ -80,7 +88,7 @@ public class Monster extends com.tce.pojo.charater.Character {
     /**getter and setter TODO*/
 
     public static void main(String [] args){
-        Monster monster = new Monster("nihao", "ÄãºÃ", 10, 10, 10, 10, 10, "ÖĞÁ¢ÉÆÁ¼");
+        Monster monster = new Monster("nihao", "ä½ å¥½", 10, 10, 10, 10, 10, "ä¸­ç«‹å–„è‰¯");
         System.out.println(monster.getEn_name()); System.out.println(monster.getStrength());
 
     }

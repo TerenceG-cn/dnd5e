@@ -1,17 +1,17 @@
 package com.tce.pojo.treasures;
 
 /**
- * ÒÕÊõÆ·ÊµÌå
- * Èç¹ûÒ»¸ö±¦¿âµÄ²ØÆ·°üº¬ÒÕÊõÆ·£¬ÔòÄã¿ÉÒÔÊ¹ÓÃÏÂÁĞ±í
- * ¸ñ²¢°´Æä¼ÛÖµÀ´Ëæ»úÑ¡¶¨±»ÕÒµ½µÄÒÕÊõÆ·¡£Äã¿ÉÒÔ¶à´ÎÖÀ÷»
- * À´È·¶¨±¦¿âÖĞµÄÒÕÊõÆ·²ØÆ·¡£¶øÍ¬¸ö±¦¿âÀïÒ²»á´æÔÚ¶à¼şÏà
- * Í¬µÄÒÕÊõÆ·¡£
+ * è‰ºæœ¯å“å®ä½“
+ * å¦‚æœä¸€ä¸ªå®åº“çš„è—å“åŒ…å«è‰ºæœ¯å“ï¼Œåˆ™ä½ å¯ä»¥ä½¿ç”¨ä¸‹åˆ—è¡¨
+ * æ ¼å¹¶æŒ‰å…¶ä»·å€¼æ¥éšæœºé€‰å®šè¢«æ‰¾åˆ°çš„è‰ºæœ¯å“ã€‚ä½ å¯ä»¥å¤šæ¬¡æ·éª°
+ * æ¥ç¡®å®šå®åº“ä¸­çš„è‰ºæœ¯å“è—å“ã€‚è€ŒåŒä¸ªå®åº“é‡Œä¹Ÿä¼šå­˜åœ¨å¤šä»¶ç›¸
+ * åŒçš„è‰ºæœ¯å“ã€‚
  */
 public class ArtObjects {
-    private Integer id;//×ÔÔöÖ÷¼ü
+    private Integer id;//è‡ªå¢ä¸»é”®
     private String en_name;//ewer
-    private String cn_name;//ÒøË®ºø
-    private Integer value;//¼ÛÖµ
+    private String cn_name;//é“¶æ°´å£¶
+    private Integer value;//ä»·å€¼
 
     public ArtObjects(){}
     public ArtObjects(String en_name,String cn_name,int value){
@@ -56,9 +56,9 @@ public class ArtObjects {
     public String toString() {
         return "ArtObject{" +
                 "id=" + id +
-                ", Ó¢ÎÄÃû£º" + en_name  +
-                ", ÖĞÎÄÃû£º" + cn_name  +
-                ", ¼ÛÖµ£º" + value + "gp"+
+                ", è‹±æ–‡åï¼š" + en_name  +
+                ", ä¸­æ–‡åï¼š" + cn_name  +
+                ", ä»·å€¼ï¼š" + value + "gp"+
                 '}';
     }
 }

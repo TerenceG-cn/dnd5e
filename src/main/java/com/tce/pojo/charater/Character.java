@@ -20,8 +20,8 @@ public abstract class Character {
     private Integer wis_mod;        //感知调整值
     private Integer cha_mod;        //魅力调整值
 
-    /**调整值*/
-    private int[]  abilityModifiers;
+//    /**调整值*/
+//    private int[]  abilityModifiers;
     /**阵营
      * 1.守序善良 4.守序中立 7.守序邪恶
      *
@@ -98,14 +98,6 @@ public abstract class Character {
     public void setCharisma(int charisma) {
         this.charisma = charisma;
         this.cha_mod=(charisma-10)/2;
-    }
-
-    public int[] getAbilityModifiers() {
-        return abilityModifiers;
-    }
-
-    public void setAbilityModifiers(int[] abilityModifiers) {
-        this.abilityModifiers = abilityModifiers;
     }
 
     public String getAlignment() {

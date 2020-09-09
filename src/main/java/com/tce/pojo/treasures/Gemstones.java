@@ -1,18 +1,18 @@
 package com.tce.pojo.treasures;
 
 /**
- * ±¦Ê¯ÊµÌå
- * Èç¹ûÒ»¸ö±¦¿âµÄ²ØÆ·°üº¬±¦Ê¯£¬ÔòÄã¿ÉÒÔÊ¹ÓÃÏÂÁĞ±í¸ñ
- * ²¢°´Æä¼ÛÖµÀ´Ëæ»úÑ¡¶¨±»ÕÒµ½µÄÊÇ±¦Ê¯ÖÖÀà¡£Äã¿ÉÒÔÉè¶¨Æä
- * ÄÚÖ»ÓĞÒ»ÖÖ±¦Ê¯È»ºóÖ»÷»Ò»´Î£¬»òÕß¶à´ÎÖÀ÷»À´´´ÔìÒ»¸ö°ü
- * º¬¶àÖÖ±¦Ê¯µÄ±¦Ê¯¶Ñ¡£
+ * å®çŸ³å®ä½“
+ * å¦‚æœä¸€ä¸ªå®åº“çš„è—å“åŒ…å«å®çŸ³ï¼Œåˆ™ä½ å¯ä»¥ä½¿ç”¨ä¸‹åˆ—è¡¨æ ¼
+ * å¹¶æŒ‰å…¶ä»·å€¼æ¥éšæœºé€‰å®šè¢«æ‰¾åˆ°çš„æ˜¯å®çŸ³ç§ç±»ã€‚ä½ å¯ä»¥è®¾å®šå…¶
+ * å†…åªæœ‰ä¸€ç§å®çŸ³ç„¶ååªéª°ä¸€æ¬¡ï¼Œæˆ–è€…å¤šæ¬¡æ·éª°æ¥åˆ›é€ ä¸€ä¸ªåŒ…
+ * å«å¤šç§å®çŸ³çš„å®çŸ³å †ã€‚
  */
 public class Gemstones {
-    private Integer id;//×ÔÔöÖ÷¼ü
+    private Integer id;//è‡ªå¢ä¸»é”®
     private String en_name;//azurite
-    private String cn_name;//À¶Í­¿ó
-    private String gem_description;//"ÉîÀ¶É«°ß²µÎÆÀí²»Í¸Ã÷±¦Ê¯"
-    private Integer value;//¼ÛÖµ10gp
+    private String cn_name;//è“é“œçŸ¿
+    private String gem_description;//"æ·±è“è‰²æ–‘é©³çº¹ç†ä¸é€æ˜å®çŸ³"
+    private Integer value;//ä»·å€¼10gp
 
     public Gemstones() {}
 
@@ -67,10 +67,10 @@ public class Gemstones {
     public String toString() {
         return "Gem{" +
                 "id=" + id +
-                ", Ó¢ÎÄÃû£º" + en_name  +
-                ", ÖĞÎÄÃû£º" + cn_name  +
-                ", ±¦Ê¯½éÉÜ£º" + gem_description +
-                ", ¼ÛÖµ£º" + value + "gp"+
+                ", è‹±æ–‡åï¼š" + en_name  +
+                ", ä¸­æ–‡åï¼š" + cn_name  +
+                ", å®çŸ³ä»‹ç»ï¼š" + gem_description +
+                ", ä»·å€¼ï¼š" + value + "gp"+
                 '}';
     }
 }

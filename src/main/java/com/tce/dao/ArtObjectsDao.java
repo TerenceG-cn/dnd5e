@@ -5,9 +5,9 @@ import com.tce.pojo.treasures.ArtObjects;
 import java.util.List;
 
 public interface ArtObjectsDao {
-    public List<ArtObjects> getByValue(int val);//根据价值查询艺术品信息
-    public ArtObjects getByName(String name);//根据名称查询宝石信息
-    public int insertArt(ArtObjects art);//新增宝石
-    public  int updateArt(ArtObjects art);//修改宝石信息
-    public  int deleteArt(Integer id);//删除宝石
+    public List<ArtObjects> getByValue(int val);//鏍规嵁浠峰�兼煡璇㈣壓鏈搧淇℃伅
+    public ArtObjects getByName(String name);//鏍规嵁鍚嶇О鏌ヨ瀹濈煶淇℃伅
+    public int insertArt(ArtObjects art);//鏂板瀹濈煶
+    public  int updateArt(ArtObjects art);//淇敼瀹濈煶淇℃伅
+    public  int deleteArt(Integer id);//鍒犻櫎瀹濈煶
 }

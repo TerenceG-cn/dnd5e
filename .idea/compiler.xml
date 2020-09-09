@@ -9,12 +9,8 @@
         <module name="dnd5e" />
       </profile>
     </annotationProcessing>
-<<<<<<< HEAD
-    <bytecodeTargetLevel target="8">
+    <bytecodeTargetLevel>
       <module name="dnd5e" target="7" />
     </bytecodeTargetLevel>
-=======
-    <bytecodeTargetLevel target="14" />
->>>>>>> 942a6d708cc8a6f4500b3b2fd6edf831b2cef835
   </component>
 </project>
