@@ -9,13 +9,13 @@ import java.io.InputStream;
 public class ArtObjectsTest {
     public static void main(String[] args){
         try {String resource="mybatis-config.xml";
-            InputStream is = Resources.getResourceAsStream(resource);//¼ÓÔØºËĞÄÅäÖÃÎÄ¼ş
-            SqlSessionFactory factory =new SqlSessionFactoryBuilder().build(is); //»ñµÃ¹¤³§¶ÔÏó
+            InputStream is = Resources.getResourceAsStream(resource);//åŠ è½½æ ¸å¿ƒé…ç½®æ–‡ä»¶
+            SqlSessionFactory factory =new SqlSessionFactoryBuilder().build(is); //è·å¾—å·¥å‚å¯¹è±¡
 
-            SqlSession sqlSession=factory.openSession();  //»ñÈ¡ºËĞÄ¶ÔÏó
+            SqlSession sqlSession=factory.openSession();  //è·å–æ ¸å¿ƒå¯¹è±¡
 
             /**getByName true -> selectOne*/
-            //ÒÑÍê³É
+            //å·²å®Œæˆ
             ArtObjects artbyname=sqlSession.selectOne("getArtByName","statuette");
             System.out.println(artbyname.toString());
 
@@ -29,33 +29,33 @@ public class ArtObjectsTest {
              */
 
             /**insertGem test true*/
-            /*ÒÑÍê³ÉÌí¼Ó±¦Ê¯Ïî
-            ArtObjects art=new ArtObjects("ewer","ÒøË®ºø",25);
+            /*å·²å®Œæˆæ·»åŠ å®çŸ³é¡¹
+            ArtObjects art=new ArtObjects("ewer","é“¶æ°´å£¶",25);
             sqlSession.insert("insertArt", art);
-            ArtObjects art1=new ArtObjects("statuette","¹ÇÖÊµñÏñ",25);
+            ArtObjects art1=new ArtObjects("statuette","éª¨è´¨é›•åƒ",25);
             sqlSession.insert("insertArt", art1);
-            ArtObjects art2=new ArtObjects("bracelet","½ğÖÊĞ¡ÊÖïí",25);
+            ArtObjects art2=new ArtObjects("bracelet","é‡‘è´¨å°æ‰‹é•¯",25);
             sqlSession.insert("insertArt", art2);
-            ArtObjects art3=new ArtObjects("vestments","½ğË¿Ö¯ÖÆµÄ·¨ÒÂ",25);
+            ArtObjects art3=new ArtObjects("vestments","é‡‘ä¸ç»‡åˆ¶çš„æ³•è¡£",25);
             sqlSession.insert("insertArt", art3);
-            ArtObjects art4=new ArtObjects("mask","ÓÉÒøË¿·ìÖÆµÄºÚÌì¶ìÈŞÃæ¾ß",25);
+            ArtObjects art4=new ArtObjects("mask","ç”±é“¶ä¸ç¼åˆ¶çš„é»‘å¤©é¹…ç»’é¢å…·",25);
             sqlSession.insert("insertArt", art4);
-            ArtObjects art5=new ArtObjects("chalice","µã×º×ÅÒøË¿µÄÍ­ÖÊ¾Æ±­",25);
+            ArtObjects art5=new ArtObjects("chalice","ç‚¹ç¼€ç€é“¶ä¸çš„é“œè´¨é…’æ¯",25);
             sqlSession.insert("insertArt", art5);
-            ArtObjects art6=new ArtObjects("dice","³É¶ÔµÄ¹ÇÖÊ÷»×Ó",25);
+            ArtObjects art6=new ArtObjects("dice","æˆå¯¹çš„éª¨è´¨éª°å­",25);
             sqlSession.insert("insertArt", art6);
-            ArtObjects art7=new ArtObjects("mirror","ÏëÔÚ²Ê»æÄ¾¿òÖĞµÄĞ¡¾µ×Ó",25);
+            ArtObjects art7=new ArtObjects("mirror","æƒ³åœ¨å½©ç»˜æœ¨æ¡†ä¸­çš„å°é•œå­",25);
             sqlSession.insert("insertArt", art7);
-            ArtObjects art8=new ArtObjects("handkerchief","Ğå»¨Ë¿³ñÊÖÅÁ",25);
+            ArtObjects art8=new ArtObjects("handkerchief","ç»£èŠ±ä¸ç»¸æ‰‹å¸•",25);
             sqlSession.insert("insertArt", art8);
-            ArtObjects art9=new ArtObjects("locket","ÄÚÀï»­×Å²Ê»æĞ¤ÏñµÄ½ğÖÊÁ´×¹ºĞ",25);
+            ArtObjects art9=new ArtObjects("locket","å†…é‡Œç”»ç€å½©ç»˜è‚–åƒçš„é‡‘è´¨é“¾å ç›’",25);
             sqlSession.insert("insertArt", art9);
              */
 
             /**updateArt test  TODO*/
             /**deleteArt test  TODO*/
-            sqlSession.commit();  //ĞŞ¸ÄÊı¾İ¿â²Ù×÷ĞèÒª¾ªÏ²ÊÖ¶¯µÄÊÂÎñÌá½»(ÔöÉ¾¸Ä)
-            sqlSession.close();  //ĞèÒª¹Ø±ÕsqlSession¶ÔÏóÊÍ·Å×ÊÔ´
+            sqlSession.commit();  //ä¿®æ”¹æ•°æ®åº“æ“ä½œéœ€è¦æƒŠå–œæ‰‹åŠ¨çš„äº‹åŠ¡æäº¤(å¢åˆ æ”¹)
+            sqlSession.close();  //éœ€è¦å…³é—­sqlSessionå¯¹è±¡é‡Šæ”¾èµ„æº
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -1,6 +1,6 @@
 package com.tce.pojo.charater;
 
-public class Monster extends Character {
+public class Monster extends AbstractCharacter {
     /**
      * 种类与附标
      */
@@ -125,7 +125,7 @@ public class Monster extends Character {
     private Boolean acidInvulnerability;        //强酸伤害免疫
 
     /**
-     * 状态免疫Stauts Immunity，包括invisible，unconscious，prone共15种状态
+     * 状态免疫Stauts Immunity，包括invisible隐身，unconscious昏迷，incapacitated瘫痪/丧失行动能力共15种状态
      */
     private Boolean blindedImmunity;            //目盲免疫
     private Boolean deafenedImmunity;           //失聪免疫
@@ -137,21 +137,9 @@ public class Monster extends Character {
     private Boolean stunnedImmunity;            //震慑免疫
     private Boolean paralyzedImmunity;          //麻痹免疫
     private Boolean restrainedImmunity;         //束缚免疫
-    private Boolean incapacitatedImmunity;      //倒地免疫
+    private Boolean proneImmunity;              //倒地免疫
     private Boolean grappledImmunity;           //擒抱免疫
 
-    /**
-     * 感官,尺
-     */
-    private Integer darkvision;//黑暗视觉
-    private Integer trueSight;//真实视觉
-    private Integer blindsight;//盲视
-    private Integer passivePerception;//被动感知
-
-    /**
-     * 语言
-     */
-    private String language;
 
     /**
      * 挑战等级
@@ -173,7 +161,7 @@ public class Monster extends Character {
 
     public static void main(String[] args) {
         Monster monster = new Monster("nihao", "你好", 10, 10, 10, 10, 10, "中立善良");
-        System.out.println(monster.getEn_name());
+        System.out.println(monster.getEnName());
         System.out.println(monster.getStrength());
 
     }
