@@ -1,4 +1,4 @@
-package com.tce.pojo.charater;
+package com.tce.javabean.charater;
 
 public class Monster extends AbstractCharacter {
     /**

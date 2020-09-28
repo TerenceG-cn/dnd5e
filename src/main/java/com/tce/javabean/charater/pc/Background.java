@@ -1,4 +1,4 @@
-package com.tce.pojo.charater;
+package com.tce.javabean.charater.pc;
 
 import com.tce.fixed_enum.Skills;
 

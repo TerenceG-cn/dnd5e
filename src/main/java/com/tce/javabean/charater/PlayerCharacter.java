@@ -1,4 +1,6 @@
-package com.tce.pojo.charater;
+package com.tce.javabean.charater;
+
+import com.tce.javabean.charater.pc.Background;
 
 public class PlayerCharacter extends AbstractCharacter{
     /**

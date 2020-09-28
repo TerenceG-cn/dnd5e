@@ -1,4 +1,4 @@
-package com.tce.pojo.charater;
+package com.tce.javabean.charater.pc;
 
 import com.tce.fixed_enum.Ideals;
 import com.tce.fixed_enum.Skills;
@@ -10,7 +10,7 @@ import java.util.Random;
 /**
  * 背景：侍僧
  */
-public class Acolyte extends Background{
+public class Acolyte extends Background {
 
     /**
      * 可选特点
