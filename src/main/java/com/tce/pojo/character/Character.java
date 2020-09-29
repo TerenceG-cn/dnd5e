@@ -1,5 +1,6 @@
 package com.tce.pojo.character;
 
+@Deprecated
 public class Character {
     private Long id;
     private Long monsterId;//NULL

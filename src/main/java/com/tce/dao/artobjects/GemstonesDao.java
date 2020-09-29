@@ -1,4 +1,4 @@
-package com.tce.dao;
+package com.tce.dao.artobjects;
 
 import com.tce.pojo.treasures.Gemstones;
 

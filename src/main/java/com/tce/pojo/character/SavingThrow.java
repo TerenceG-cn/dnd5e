@@ -1,7 +1,7 @@
 package com.tce.pojo.character;
 
 public class SavingThrow {
-    private Long id;
+    private Long monsterId;
     private Integer strengthSTB;       //力量豁免检定加值
     private Integer dexteritySTB;      //敏捷豁免检定加值
     private Integer constitutionSTB;   //体质豁免检定加值
@@ -9,12 +9,13 @@ public class SavingThrow {
     private Integer wisdomSTB;         //感知豁免检定加值
     private Integer charismaSTB;       //魅力豁免检定加值
 
-    public Long getId() {
-        return id;
+
+    public Long getMonsterId() {
+        return monsterId;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setMonsterId(Long monsterId) {
+        this.monsterId = monsterId;
     }
 
     public Integer getStrengthSTB() {

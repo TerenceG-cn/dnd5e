@@ -1,12 +1,13 @@
 package com.tce.pojo.character;
 
 public class Monster {
-    private Long id;
+    private Long id;//需要特殊的id生成
 
-    private Long resistanceId;//抗性，1：1 fk
-    private Long savingthrowId;//豁免检定加值,1:1 fk
-    private Long skillId;//技能检定加值,1:1 fk
-    private Long vulunerabilityId;//易伤,1:1 fk
+    private String enName;
+    private String cnName;
+
+    /**阵营*/
+    private String alignment;
 
     /**
      * 种类与附标
@@ -50,7 +51,29 @@ public class Monster {
     private int swimSpeed;
 
 
+    public String getEnName() {
+        return enName;
+    }
 
+    public void setEnName(String enName) {
+        this.enName = enName;
+    }
+
+    public String getCnName() {
+        return cnName;
+    }
+
+    public void setCnName(String cnName) {
+        this.cnName = cnName;
+    }
+
+    public String getAlignment() {
+        return alignment;
+    }
+
+    public void setAlignment(String alignment) {
+        this.alignment = alignment;
+    }
 
     public Long getId() {
         return id;

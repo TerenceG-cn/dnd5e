@@ -4,7 +4,7 @@ package com.tce.pojo.character;
  * 抗性
  */
 public class Resistance {
-    private Long id;
+    private Long monsterId;
     private Boolean fireResistance;     //火焰抗性
     private Boolean frozenResistance;   //冷冻抗性
     private Boolean shiningResistance;  //光耀抗性
@@ -14,12 +14,12 @@ public class Resistance {
     private Boolean punctureResistance; //穿刺抗性
     private Boolean slashResistance;    //挥砍抗性
 
-    public Long getId() {
-        return id;
+    public Long getMonsterId() {
+        return monsterId;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setMonsterId(Long monsterId) {
+        this.monsterId = monsterId;
     }
 
     public Boolean getFireResistance() {

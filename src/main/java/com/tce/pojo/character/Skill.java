@@ -4,7 +4,7 @@ package com.tce.pojo.character;
  * 技能检定加值
  */
 public class Skill {
-    private Long id;
+    private Long monsterId;
     private Integer athletics;      //运动技能检定加值，力量相关
 
     private Integer acrobatics;     //体操，体质
@@ -28,12 +28,13 @@ public class Skill {
     private Integer intimidation;   //威胁
     private Integer performance;    //表演
 
-    public Long getId() {
-        return id;
+
+    public Long getMonsterId() {
+        return monsterId;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setMonsterId(Long monsterId) {
+        this.monsterId = monsterId;
     }
 
     public Integer getAthletics() {

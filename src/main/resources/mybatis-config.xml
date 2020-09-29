@@ -16,7 +16,8 @@
         </environment>
     </environments><!--导入跟接口对应的XML文件-->
     <mappers>
-        <mapper resource="dao/GemstonesDao.xml"/>
-        <mapper resource="dao/ArtObjectsDao.xml"/>
+        <mapper resource="com/tce/dao/artobjects/GemstonesDao.xml"/>
+        <mapper resource="com/tce/dao/artobjects/ArtObjectsDao.xml"/>
+        <mapper class="com.tce.dao.character.MonsterDao"/>
     </mappers>
 </configuration>
