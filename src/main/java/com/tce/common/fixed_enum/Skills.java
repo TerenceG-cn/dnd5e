@@ -1,4 +1,4 @@
-package com.tce.fixed_enum;
+package com.tce.common.fixed_enum;
 
 /**
  * 技能熟练项

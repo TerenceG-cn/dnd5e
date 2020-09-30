@@ -1,6 +1,6 @@
 package com.tce.javabean.charater.pc;
 
-import com.tce.fixed_enum.Skills;
+import com.tce.common.fixed_enum.Skills;
 
 import java.util.ArrayList;
 import java.util.HashMap;

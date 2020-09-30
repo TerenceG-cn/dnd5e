@@ -1,4 +1,4 @@
-package com.tce.fixed_enum;
+package com.tce.common.fixed_enum;
 
 public enum Ideals{
         TRADITIONS, //传统 古代崇拜与献祭的传统必须保护并维持。(守序)

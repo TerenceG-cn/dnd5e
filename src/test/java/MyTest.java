@@ -1,8 +1,4 @@
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
-import com.tce.fixed_enum.Skills;
-
-import java.util.ArrayList;
-import java.util.List;
+import com.tce.common.fixed_enum.Skills;
 
 public class MyTest {
 //    public void fcn(int o){}

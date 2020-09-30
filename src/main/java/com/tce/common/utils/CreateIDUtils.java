@@ -1,6 +1,5 @@
-package com.tce.utils;
+package com.tce.common.utils;
 
-import java.math.BigInteger;
 import java.util.UUID;
 
 public class CreateIDUtils {

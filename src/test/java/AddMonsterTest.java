@@ -1,5 +1,5 @@
 import com.tce.pojo.character.Monster;
-import com.tce.utils.CreateIDUtils;
+import com.tce.common.utils.CreateIDUtils;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
