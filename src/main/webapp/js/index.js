@@ -4,20 +4,11 @@ $(function() {
 		var element = layui.element;
 
 	});
-	$("#showItem").click(function(){
-		$("#content").load("/jsp/showItem.jsp");
+	$("#showMonster").click(function(){
+		$("#content").load("/jsp/showMonster.jsp");
 	})
-	$("#initSolr").click(function(){
-		$("#content").load("/jsp/initSolr.jsp");
-	})
-	$("#addItem").click(function(){
-		$("#content").load("/jsp/addItem.jsp");
-	})
-	$("#addParam").click(function() {
-		$("#content").load("/jsp/addParam.jsp");
-	})
-	$("#showContent").click(function(){
-		$("#content").load("/jsp/showContent.jsp");
+	$("#addMonster").click(function(){
+		$("#content").load("/jsp/addMonster.jsp");
 	})
 
 })
