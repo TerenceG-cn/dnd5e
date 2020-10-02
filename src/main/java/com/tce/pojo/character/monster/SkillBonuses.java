@@ -1,4 +1,4 @@
-package com.tce.pojo.character;
+package com.tce.pojo.character.monster;
 
 /**
  * 技能检定加值

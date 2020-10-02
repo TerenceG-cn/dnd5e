@@ -1,6 +1,6 @@
 package com.tce.dao.character;
 
-import com.tce.pojo.character.Senses;
+import com.tce.pojo.character.monster.Senses;
 import org.apache.ibatis.annotations.Insert;
 
 public interface SightDao {

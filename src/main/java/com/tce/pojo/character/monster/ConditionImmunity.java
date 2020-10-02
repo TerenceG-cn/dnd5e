@@ -1,4 +1,4 @@
-package com.tce.pojo.character;
+package com.tce.pojo.character.monster;
 /**
  * 状态免疫Stauts Immunity，包括invisible隐身，unconscious昏迷，incapacitated瘫痪/丧失行动能力共15种状态
  */

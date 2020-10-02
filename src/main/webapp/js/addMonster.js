@@ -4,7 +4,7 @@ $(function () {
 
         //监听提交
         form.on('submit(formDemo)', function (data) {
-            console.log("nmsl");
+            console.log("提交");
             $.ajax({
                 type: "POST",
                 url: "/monster/addMonster",

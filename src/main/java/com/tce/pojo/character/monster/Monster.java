@@ -1,4 +1,4 @@
-package com.tce.pojo.character;
+package com.tce.pojo.character.monster;
 
 public class Monster {
     private Long id;//需要特殊的id生成

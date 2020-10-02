@@ -1,7 +1,7 @@
 package com.tce.dao.character.monster;
 
 
-import com.tce.pojo.character.SavingThrowBonuses;
+import com.tce.pojo.character.monster.SavingThrowBonuses;
 import org.apache.ibatis.annotations.Insert;
 
 public interface SavingThrowBonusesDao {

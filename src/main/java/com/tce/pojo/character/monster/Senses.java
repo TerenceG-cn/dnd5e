@@ -1,4 +1,4 @@
-package com.tce.pojo.character;
+package com.tce.pojo.character.monster;
 
 /**
  * 感官 Senses

@@ -1,7 +1,7 @@
 package com.tce.dao.character.monster;
 
 
-import com.tce.pojo.character.SkillBonuses;
+import com.tce.pojo.character.monster.SkillBonuses;
 import org.apache.ibatis.annotations.Insert;
 
 public interface SkillBonusesDao {

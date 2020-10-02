@@ -1,7 +1,7 @@
 package com.tce.dao.character.monster;
 
 
-import com.tce.pojo.character.Resistance;
+import com.tce.pojo.character.monster.Resistance;
 import org.apache.ibatis.annotations.Insert;
 
 public interface ResistanceDao {

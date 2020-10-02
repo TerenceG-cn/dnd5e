@@ -1,4 +1,7 @@
 import com.tce.common.fixed_enum.Skills;
+import com.tce.service.MonsterService;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.util.List;
 
@@ -31,6 +34,8 @@ public class MyTest {
     public static void main(String[] args) throws Exception {
 //        System.out.println(Skills.valueOf("ATHLETICS").name());
 //        System.out.println(Skills.valueOf("ATHLETICS").ordinal());
+        ApplicationContext context = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
+        MonsterService beanA = (MonsterService) context.getBean("MonsterService");
 
     }
 }
