@@ -14,15 +14,6 @@ public class Gemstones {
     private String gem_description;//"深蓝色斑驳纹理不透明宝石"
     private Integer value;//价值10gp
 
-    public Gemstones() {}
-
-    public Gemstones(String en_name, String cn_name, String gem_description, int value) {
-        this.en_name=en_name;
-        this.cn_name=cn_name;
-        this.gem_description=gem_description;
-        this.value= value;
-    }
-
     public Integer getId() {
         return id;
     }

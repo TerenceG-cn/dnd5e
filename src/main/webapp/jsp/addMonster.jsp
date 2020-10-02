@@ -78,6 +78,16 @@
 					<input type="text" name="hitPoints" class="layui-input">
 				</div>
 			</div>
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">宗教</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="acrobatics" class="layui-input">
+                </div>
+            </div>
+
+
+
 			<div class="layui-form-item">
 				<label class="layui-form-label">怪物图片</label>
 				<div class="layui-input-block">

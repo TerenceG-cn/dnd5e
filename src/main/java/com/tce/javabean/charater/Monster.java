@@ -150,14 +150,10 @@ public class Monster extends AbstractCharacter {
      */
     private Integer experience;
 
-    //TODO 构造器
     public Monster(String en_name, String cn_name, int str, int dex, int intel, int wis, int chma, String ali) {
         super(en_name, cn_name, str, dex, intel, wis, chma, ali);
     }
 
-    /**
-     * getter and setter TODO
-     */
 
     public static void main(String[] args) {
         Monster monster = new Monster("nihao", "你好", 10, 10, 10, 10, 10, "中立善良");

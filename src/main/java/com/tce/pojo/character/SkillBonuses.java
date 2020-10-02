@@ -3,7 +3,7 @@ package com.tce.pojo.character;
 /**
  * 技能检定加值
  */
-public class Skill {
+public class SkillBonuses {
     private Long monsterId;
     private Integer athletics;      //运动技能检定加值，力量相关
 

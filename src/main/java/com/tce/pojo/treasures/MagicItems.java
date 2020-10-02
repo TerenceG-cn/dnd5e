@@ -71,12 +71,6 @@ public class MagicItems {
             "害具有抗性。神器则尤其坚不可摧，而只能通过一些极端手段\n" +
             "才能破坏。";
 
-    public MagicItems(){};
-    public MagicItems(String en_name,String cn_name,String rarity,String categories,boolean attunement,String sf){
-        this.en_name=en_name;this.cn_name=cn_name;this.rarity=rarity;
-        this.categories=categories;this.attunement=attunement;this.special_features=sf;
-    }
-
     /**自创魔法物品 TODO*/
     public static void createMagicItems(){}
 

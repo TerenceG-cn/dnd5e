@@ -1,6 +1,9 @@
 package com.tce.pojo.character;
 
-public class SavingThrow {
+/**
+ *
+ */
+public class SavingThrowBonuses {
     private Long monsterId;
     private Integer strengthSTB;       //力量豁免检定加值
     private Integer dexteritySTB;      //敏捷豁免检定加值

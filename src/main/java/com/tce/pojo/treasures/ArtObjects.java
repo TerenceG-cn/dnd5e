@@ -13,13 +13,6 @@ public class ArtObjects {
     private String cn_name;//银水壶
     private Integer value;//价值
 
-    public ArtObjects(){}
-    public ArtObjects(String en_name,String cn_name,int value){
-        this.en_name=en_name;
-        this.cn_name=cn_name;
-        this.value=value;
-    }
-
     public Integer getId() {
         return id;
     }

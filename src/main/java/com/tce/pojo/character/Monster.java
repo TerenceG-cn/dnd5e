@@ -5,22 +5,21 @@ public class Monster {
 
     private String enName;
     private String cnName;
-
-    /**阵营*/
-    private String alignment;
-
-    /**
-     * 种类与附标
-     */
-    private String typeAndTags;
     /**
      * 体型
      */
     private String size;
     /**
-     * 生命骰
+     * 种类与附标
      */
-    private Integer hitDice;
+    private String typeAndTags;
+    /**
+     * 阵营
+     */
+    private String alignment;
+
+    /**属性值和调整值*/
+
     /**
      * 护甲等级
      */
@@ -29,26 +28,39 @@ public class Monster {
      * 生命值
      */
     private Integer hitPoints;
+    private Integer hitDice;//分配的生命骰
     /**
-     * 速度(步行)
+     * 伤害抗性、免疫与易伤
+     * DamageVulnerabilities, Resistances, and Immunities
      */
-    private Integer speed;//单位尺
+
+    /**攻击加值 Attack Bonuses todo*/
+    /**伤害 todo*/
+
+    /**豁免DC Save DC todo*/
+
+    /**专有特质、动作和反应 Special Traits, Actions, and Reactions todo*/
+
+    /**速度 Speed*/
+
+    /**豁免检定加值 Saving Throw Bonuses*/
+
     /**
-     * 掘穴速度
+     * 挑战等级 todo
      */
-    private Integer burrowSpeed;
-    /**
-     * 攀爬速度
-     */
-    private Integer climbSpeed;
-    /**
-     * 飞行速度
-     */
-    private Integer flySpeed;
-    /**
-     * 游泳速度
-     */
-    private int swimSpeed;
+    private Double challengeRating;
+    private Integer experience;//经验
+
+    /**技能加值 Skill Bonuses*/
+
+    /**状态免疫 Condition Immunities*/
+
+    /**感官 Senses*/
+
+    /**语言 Languages todo*/
+
+
+
 
 
     public String getEnName() {
@@ -121,45 +133,5 @@ public class Monster {
 
     public void setHitPoints(Integer hitPoints) {
         this.hitPoints = hitPoints;
-    }
-
-    public Integer getSpeed() {
-        return speed;
-    }
-
-    public void setSpeed(Integer speed) {
-        this.speed = speed;
-    }
-
-    public Integer getBurrowSpeed() {
-        return burrowSpeed;
-    }
-
-    public void setBurrowSpeed(Integer burrowSpeed) {
-        this.burrowSpeed = burrowSpeed;
-    }
-
-    public Integer getClimbSpeed() {
-        return climbSpeed;
-    }
-
-    public void setClimbSpeed(Integer climbSpeed) {
-        this.climbSpeed = climbSpeed;
-    }
-
-    public Integer getFlySpeed() {
-        return flySpeed;
-    }
-
-    public void setFlySpeed(Integer flySpeed) {
-        this.flySpeed = flySpeed;
-    }
-
-    public int getSwimSpeed() {
-        return swimSpeed;
-    }
-
-    public void setSwimSpeed(int swimSpeed) {
-        this.swimSpeed = swimSpeed;
     }
 }

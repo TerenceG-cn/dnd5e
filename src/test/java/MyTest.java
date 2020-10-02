@@ -1,5 +1,7 @@
 import com.tce.common.fixed_enum.Skills;
 
+import java.util.List;
+
 public class MyTest {
 //    public void fcn(int o){}
 //    public int fcn(int o){} 只有返回值不同的方法 编译不通过
@@ -27,8 +29,8 @@ public class MyTest {
 //        }
 //    }
     public static void main(String[] args) throws Exception {
-        System.out.println(Skills.valueOf("ATHLETICS").name());
-        System.out.println(Skills.valueOf("ATHLETICS").ordinal());
+//        System.out.println(Skills.valueOf("ATHLETICS").name());
+//        System.out.println(Skills.valueOf("ATHLETICS").ordinal());
 
     }
 }
