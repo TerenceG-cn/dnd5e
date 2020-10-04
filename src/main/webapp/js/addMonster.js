@@ -1,7 +1,6 @@
 $(function () {
     layui.use(['form', 'upload'], function () {
         var form = layui.form, layer = layui.layer, upload = layui.upload;
-
         //监听提交
         form.on('submit(formDemo)', function (data) {
             console.log("提交");
